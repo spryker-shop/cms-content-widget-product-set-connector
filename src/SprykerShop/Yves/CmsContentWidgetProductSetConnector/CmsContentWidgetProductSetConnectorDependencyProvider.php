@@ -44,11 +44,6 @@ class CmsContentWidgetProductSetConnectorDependencyProvider extends SprykerCmsCo
         return $container;
     }
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     protected function addCmsProductSetContentWidgetPlugins(Container $container): Container
     {
         $container->set(static::PLUGIN_CMS_PRODUCT_SET_CONTENT_WIDGETS, function () {
@@ -66,11 +61,6 @@ class CmsContentWidgetProductSetConnectorDependencyProvider extends SprykerCmsCo
         return [];
     }
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     protected function addProductSetStorageClient(Container $container): Container
     {
         $container->set(static::CLIENT_PRODUCT_SET_STORAGE, function (Container $container) {
