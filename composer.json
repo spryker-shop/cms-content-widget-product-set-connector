@@ -20,7 +20,8 @@
     "suggest": {
         "spryker-shop/product-set-detail-page": "If you want to use CmsProductSetContentWidgetPlugin.",
         "spryker-shop/product-set-widget": "If you want to use components from module ProductSetWidget or ProductSetWidgetPlugin use the version >= 1.9.0.",
-        "spryker/twig": "If you want to use CmsProductSetContentWidgetPlugin."
+        "spryker/twig": "If you want to use CmsProductSetContentWidgetPlugin.",
+        "spryker-shop/traceable-event-widget": "If you want the products to carry their tracking details (ProductTrackingDetailsWidget) for the traceable events."
     },
     "autoload": {
         "psr-4": {

@@ -13,6 +13,8 @@
                         optionResetUrls: optionResetUrls | default([]),
                     }
                 } only %}
+                {# The product views carry no category path: the traceable events add it to the tracked products of the set from here. #}
+                {% widget 'ProductTrackingDetailsWidget' args [productSet.productViews] only %}{% endwidget %}
             {% endif %}
         {% endif %}
     {% endfor %}
@@ -31,5 +33,7 @@
                 optionResetUrls: optionResetUrls | default([]),
             }
         } only %}
+        {# The product views carry no category path: the traceable events add it to the tracked products of the set from here. #}
+        {% widget 'ProductTrackingDetailsWidget' args [productViews] only %}{% endwidget %}
     {% endif %}
 {% endif %}
